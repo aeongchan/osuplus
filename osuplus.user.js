@@ -2440,10 +2440,10 @@
                     var osupreviewEle = $(this).find("#osupreview");
                     if(osupreviewEle.data("loaded")) return;
                     osupreviewEle.html(
-                        `${settings.osupreview ? `osu!preview (<a href='http://jmir.xyz/osu/preview.html#${mapID}' target='_blank'>open in new tab</a>)<br>
-                        <div class='preview-container'><iframe class='osupreview' src='https://jmir.xyz/osu/preview.html#${mapID}' allowfullscreen></iframe></div><br>` : ""}
-                        ${settings.osupreview2 ? `<a href='https://github.com/FukutoTojido/beatmap-viewer-web'>osu! Web Beatmap Viewer</a> (<a href='https://preview.tryz.id.vn/?b=${mapID}' target='_blank'>open in new tab</a>)<br>
-                        <div class='preview-container'><iframe class='osupreview2' src='https://preview.tryz.id.vn/?b=${mapID}' allowfullscreen></iframe></div><br>` : ""}
+                        `${settings.osupreview ? `<a href='https://github.com/aeongdesu/osu-preview-bloodcat'>osu!preview</a> (<a href='http://peppy.pages.dev/preview#${mapID}' target='_blank'>open in new tab</a>)<br>
+                        <div class='preview-container'><iframe class='osupreview' src='https://peppy.pages.dev/preview#${mapID}' allowfullscreen></iframe></div><br>` : ""}
+                        ${settings.osupreview2 ? `<a href='https://github.com/aeongdesu/osu-preview'>osu! Web Beatmap Viewer</a> (<a href='https://osu.pages.dev/?b=${mapID}' target='_blank'>open in new tab</a>)<br>
+                        <div class='preview-container'><iframe class='osupreview2' src='https://osu.pages.dev/?b=${mapID}' allowfullscreen></iframe></div><br>` : ""}
                         ${settings.osupreview3 ? `<a href='https://github.com/minetoblend/osu-cad'>osucad online beatmap viewer</a> (<a href='https://viewer.osucad.com/b/${jsonBeatmapset.id}/${mapID}' target='_blank'>open in new tab</a>)<br>
                         <div class='preview-container'><iframe class='osupreview3' src='https://viewer.osucad.com/embed/${jsonBeatmapset.id}/${mapID}' allowfullscreen></iframe></div>` : ""}`
                     );
